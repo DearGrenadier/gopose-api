@@ -34,6 +34,10 @@ Rails.application.configure do
   # when problems arise.
   config.log_level = :debug
 
+  # Compress JavaScripts and CSS.
+  config.assets.js_compressor = :uglifier
+  config.assets.css_compressor = :sass
+
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 

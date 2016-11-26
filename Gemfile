@@ -3,6 +3,18 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
 gem 'unicorn'
+gem 'koala', '2.2.0'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'slim-rails'
+
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'pry'
