@@ -3,10 +3,18 @@ default: &default
   pool: 5
   timeout: 5000
   encoding: unicode
-  username: cosmosloth
-  password: real2010
+  username:
+  password:
   host: localhost
 
 development:
   <<: *default
   database: gopose_development
+
+test:
+  <<: *default
+  database: gopose_test
+
+production:
+  <<: *default
+  database: gopose_production
