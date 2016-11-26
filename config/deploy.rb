@@ -42,7 +42,7 @@ namespace :deploy do
   desc 'Configure nginx files'
   task :configure_nginx do
     on roles(:web), in: :sequence, wait: 2 do
-      execute "sudo cp #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/ && sudo service nginx restart"
+      execute "sudo ln -nfs '/home/deploy/apps/appname/current/config/nginx.conf' '/etc/nginx/sites-enabled/nginx.conf'"
     end
   end
 
