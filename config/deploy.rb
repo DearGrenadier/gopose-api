@@ -1,12 +1,9 @@
-# config valid only for current version of Capistrano
-lock '3.4.0'
-
 set :rvm_type, :user
 set :rvm_ruby_version, '2.3.3'
 set :rvm_roles, :all # default value
 
 set :application, 'gopose'
-set :repo_url, 'git@github.com:dimanazarchuk/gopose.git'
+set :repo_url, 'git@github.com:dimanazarchuk/gopose-api.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -45,7 +42,7 @@ namespace :deploy do
   desc 'Configure nginx files'
   task :configure_nginx do
     on roles(:web), in: :sequence, wait: 2 do
-      execute "sudo cp #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/ && sudo /etc/init.d/nginx reload"
+      execute "sudo cp #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/ && sudo service nginx restart"
     end
   end
 
