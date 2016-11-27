@@ -24,6 +24,7 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_seed (1.0.5)
     activejob (5.0.0.1)
       activesupport (= 5.0.0.1)
       globalid (>= 0.3.6)
@@ -86,6 +87,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    faker (1.6.3)
+      i18n (~> 0.5)
     faraday (0.10.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.14)
@@ -255,6 +258,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_seed
   bootstrap-sass
   capistrano
   capistrano-bundler
@@ -263,6 +267,7 @@ DEPENDENCIES
   capistrano3-unicorn
   coffee-rails
   devise
+  faker
   jquery-rails
   koala (= 2.2.0)
   listen (~> 3.0.5)

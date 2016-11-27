@@ -15,6 +15,8 @@ gem 'coffee-rails'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'rails_admin'
+gem 'faker'
+gem 'active_seed'
 
 group :development, :test do
   gem 'pry'
