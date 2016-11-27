@@ -13,7 +13,7 @@ Rails.application.routes.draw do
                          controllers: {
                            registrations: 'api/v1/registrations'
                          }
-      resources :posts, only: :index
+      resources :posts, only: %i(index create)
     end
   end
 end

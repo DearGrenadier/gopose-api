@@ -10,6 +10,7 @@ set :repo_url, 'git@github.com:dimanazarchuk/gopose-api.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deployer/apps/gopose'
+set :branch, 'master'
 
 # Default value for :scm is :git
 # set :scm, :git
